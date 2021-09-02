@@ -1,0 +1,111 @@
+How to push prorject on azure.devops from GitBash
+
+the reason why we are pushing from gitbash it that it helps you to push project without having to use the console. steps:
+
+step one- git status 
+
+push to git repo - repo is like a container that holds your poject
+
+step two - git init, then press enter
+
+check by using git status again
+
+step three - add a remote url to the project (git remote add origin) copy the url from azure.devops
+then paste it to your gitbash, press enter
+
+step four - git status
+
+step five - git add .
+
+step six - git status
+
+onces it is staged, they will all show green.
+
+step seven - press git commit -m "Initial Push" and press enter (-m stands for message).
+
+step eight - press git push
+
+then set the mater branch on your local to match the master branch on your remote/cloud.
+by pressing git push --set-upstream origin master
+stage - commit - push.
+
+
+MORE ON THE PUSH
+git status
+
+git init
+
+git status
+
+staging:
+git remote -v: to check whether a url has been added, if not, copy the url from your files under "push an existing repository from command line".
+
+git push -u origin --all
+
+git status
+
+git add . :to stage while dot(.) stands for to stage all file.
+
+git commit -m "Initial Push From Academy Portal": while m stands for message 
+
+git status
+
+git push (copy the git--push-upstream origin master)
+
+git--push-upstream origin master
+ stat
+
+TO CLONE FROM REPOSITORY TO LOCALHOST (MY PC)
+create a new folder on your PC where you want to pull your project to.
+
+go to your files on azure.DevOps 
+
+click on your clone button to replicated the project to your local machine to the folder you created 
+
+open your gitbash in your created folder then follow the fllowing commands:
+
+git clone (paste the url copied from your files) - this should redirect you to login to your microsoft account.
+
+
+HOW TO CREATE BRANCH UNDER MASTER
+
+open your gitbash in the folder you created and follow the commands below:
+
+git status
+
+git branch: to know the list of branches on our machine
+
+git branch (name of branch), e.g, git branch ayo-succez
+
+git branch : to check the branches list.
+
+git checkout (name of branch) e.g git branch ayo-succez: it is to take out your branch from the master in order to work separately from the master.
+
+
+HOW TO WORK ON YOUR BRANCH
+open the file in your folder with visual studio
+
+add a new class under controller named with any name you want
+
+add a new class under view from your newly created controller index
+
+go to your gitbash - repeat all the process to push in a project.
+
+git pull: to see every existing branches on the remote.
+
+git checkout (name) ayo-succez
+
+
+HOW TO CRREAT PULL REQUEST
+after pushing your branch into your azuredevops
+
+click on a link in front of your branch called create pull request.
+
+name it and create
+
+go to you gitbash and type git pull
+
+open the index with your visual studio code and do the necessary adjustment
+
+push again to
+command to push to azuredevops from your visual studio code: update code
